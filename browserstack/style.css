@@ -616,4 +616,105 @@ Footer CSS
 
 footer{
     background-color: rgb(20, 36, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_outer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15% 0px 20%;
+    gap: 15px;
+}
+
+.footer_outer hr{
+    width: 100%;
+    text-align: center;
+}
+
+.footer_links_outer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer_links_outer ul{
+    list-style: none;
+}
+
+footer p{
+    font-weight: 700;
+    margin-bottom: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.footer_links_outer li{
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer_links_outer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_logo img{
+    width: 200px;
+}
+
+.socials img{
+    width: 100px;
+}
+
+.footer_button_actual{
+    padding: 5px 25px 5px 25px;
+}
+
+.footer_bottom{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px 150px 0px 150px;
+}
+
+.footer_bottom ul{
+    list-style: none;
+}
+
+.footer_bottom li{
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 21px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer_bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_bottom_links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
