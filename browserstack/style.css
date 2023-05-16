@@ -14,6 +14,7 @@ header{
     top: 0;
     z-index: 9999;
     height: 58px;
+    align-items: center;
 }
 
 header div{
@@ -86,7 +87,8 @@ nav a{
 }
 
 .dropdown_menu{
-    position: fixed;
+    position: absolute;
+    top: 50px;
     background-color: rgb(20, 36, 51);
     z-index: 9999999;
     width: 100%;
@@ -117,13 +119,18 @@ nav a{
     padding: 5px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .more_info {
       display: none;
     }
   
     .dropdown_menu_button {
       display: block;
+    }
+
+    header img{
+        width: 100px;
+        height: 50px;
     }
 }
 
@@ -142,7 +149,6 @@ nav a{
     font-weight: normal;
     text-align: center;
     font-size: 40px;
-    
 }
 
 .article_one h1{
@@ -170,6 +176,7 @@ nav a{
 .article_one_buttons button, .article_four_buttons button, .article_six_button button, .article_seven_button button, .article_eight_buttons button{
     padding: 15px 40px 15px 40px;
     width: 250px;
+    height: 50px;
 }
 
 .blue{
@@ -286,6 +293,15 @@ nav a{
     height: 130px;
     flex-direction: row;
   }
+
+  .article_one h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .blue, .clear, .clear_gray, .clear_white{
+        font-size: 10px;
+    }
 }
 
 /*
@@ -318,13 +334,36 @@ h3{
     font-size: 20px;
 }
 
-.article_two img{
+.desktop_wrapper{
     display: block;
     margin: 0 auto;
     width: 650px;
     height: 40px;
+    display: flex;
+    justify-content: center;
     position: relative;
-    top: 18px;
+    top: 25px;
+}
+
+.mobile_wrapper{
+
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .mobile_wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile{
+        height: 50px;
+        width: 225px;
+    }
+
+    .desktop{
+        display: none;
+    }
 }
 
 /*
@@ -368,6 +407,24 @@ Article Three CSS
 
 .benefits_outer img{
     text-align: center;
+}
+
+@media screen and (max-width: 900px){
+    .benefits_outer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .benefits_outer div{
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+    .benefits_two img{
+        width: 250px;
+        height: 125px;
+    }
 }
 
 /*
@@ -478,6 +535,17 @@ Article Four CSS
     font-weight: normal;
     font-size: 18px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 900px){
+    .grid_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_item{
+        width: 90vw;
+    }
 }
 
 /*
@@ -666,6 +734,12 @@ Article Eight CSS
     font-size: 18px;
     font-weight: 700;
 }
+
+@media screen and (max-width: 900px) {
+      .blue, .clear, .clear_gray, .clear_white, .white_background{
+          font-size: 10px;
+      }
+  }
 
 /*
 Footer CSS
