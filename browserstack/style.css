@@ -3,6 +3,10 @@ html, body, h1{
     padding: 0;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 /*
     Header CSS
 */
@@ -84,6 +88,7 @@ nav a{
     margin-right: 50px;
     size: 30px;
     display: none;
+    height: 100%;
 }
 
 .dropdown_menu{
@@ -137,6 +142,10 @@ nav a{
 .dropdown_menu_button:hover + .dropdown_menu, .dropdown_menu:hover{
     display: block;
     pointer-events: auto;
+}
+
+nav a:hover, .dropdown_menu a:hover{
+    color: #0070f0;
 }
 
 
@@ -409,6 +418,11 @@ Article Three CSS
     text-align: center;
 }
 
+.benefits_two img{
+    width: 275px;
+    height: 120px;
+}
+
 @media screen and (max-width: 900px){
     .benefits_outer{
         display: flex;
@@ -567,8 +581,8 @@ Article Five CSS
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
-    width: 575px;
     margin: 0 auto;
+    padding: 5px;
 }
 
 .clear_white{
@@ -604,6 +618,26 @@ Article Five CSS
     right: 0;
 }
 
+@media screen and (max-width: 900px){
+    .article_five{
+        width: 100%;
+    }
+
+    .article_five h1{
+        font-size: 20px;
+    }
+
+    .article_five img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .wrapper_one{
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
 /*
 Article Six CSS
 */
@@ -617,6 +651,19 @@ Article Six CSS
 .article_six img{
     height: 100px;
     width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+
+@media screen and (max-width: 900px){
+    .testimonial{
+        display: none;
+    }
+
+    .testimonial:nth-child(2){
+        display: block;
+    }
 }
 
 .article_six p{
@@ -693,6 +740,29 @@ Article Seven CSS
     padding: 50px 0px 30px 0px;
 }
 
+@media screen and (max-width: 900px){
+    .article_seven{
+        padding: 3px;
+    }
+
+    .article_seven h3{
+        margin: 0px;
+    }
+
+    .logo_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article_seven_logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
 /*
 Article Eight CSS
 */
@@ -739,6 +809,14 @@ Article Eight CSS
       .blue, .clear, .clear_gray, .clear_white, .white_background{
           font-size: 10px;
       }
+
+      .article_eight_buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+      }
   }
 
 /*
@@ -768,6 +846,7 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    justify-content: center;
 }
 
 .footer_links_outer ul{
@@ -848,4 +927,23 @@ footer p{
     display: flex;
     flex-direction: row;
     gap: 15px;
+}
+
+@media screen and (max-width: 900px){
+    .footer_links_outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_bottom_links ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
